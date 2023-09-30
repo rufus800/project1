@@ -1,0 +1,128 @@
+# TriviaFrenzy - A PyQt5 Trivia Game
+
+**TriviaFrenzy** is a simple yet engaging trivia game built using the PyQt5 framework. It offers users a fun way to answer multiple-choice questions and keeps track of their scores. This document provides a comprehensive overview of the application's functionality, structure, and how to use it.
+
+## Features
+
+- **Multiple-Choice Questions:** TriviaFrenzy presents a series of trivia questions with four answer options.
+
+- **Score Tracking:** The application keeps track of the user's score, awarding 5 points for each correct answer.
+
+- **Play Again:** After completing the quiz, users have the option to play again and improve their score.
+
+- **Customizable Interface:** The application's interface is customizable, including background colors, button styles, and font sizes.
+
+## Application Structure
+
+The TriviaFrenzy application consists of two main components:
+
+1. **HomePage (Home Page):** This is the initial screen users see when they launch the application. It welcomes them to TriviaFrenzy and provides a "Start Game" button to begin the trivia quiz.
+
+2. **TriviaGame (Trivia Game Page):** This is where the trivia quiz takes place. Users are presented with questions and answer options, which they can click to select. They can submit their answers and see their score at the end of the quiz.
+
+## Installation
+
+Follow these steps to set up and run the TriviaFrenzy application:
+
+**1. Clone the Repository**
+
+Clone the TriviaFrenzy repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/yourusername/TriviaFrenzy.git
+cd TriviaFrenzy
+```
+
+**2. Create a Virtual Environment (Optional but Recommended)**
+
+While not required, it's a good practice to create a virtual environment to manage project dependencies. Use the following commands to create and activate a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+**3. Install Required Dependencies**
+
+Install the required Python packages listed in the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+To start the TriviaFrenzy application, follow these steps:
+
+**1. Run the Application**
+
+Execute the following command to run the application:
+
+```bash
+python main.py
+```
+
+**2. Answer Trivia Questions**
+
+- Click the "Start Game" button on the home page to begin the trivia quiz.
+
+- Read each question and select your answer by clicking the corresponding option button.
+
+- Click the "Submit Answer" button to check your answer and move on to the next question.
+
+**3. View Your Score**
+
+At the end of the quiz, you will receive a message indicating your score. You can play again by clicking the "Play Again" button.
+
+## Converting to a Standalone Windows Application
+
+TriviaFrenzy can be converted into a standalone Windows executable for easy distribution. Follow these steps:
+
+**1. Create an Application Icon**
+
+Create an application icon (`.ico`) that represents your application. You can use various online tools to convert an image into an icon.
+
+**2. Install PyInstaller**
+
+If you haven't already, install the `pyinstaller` package, which will be used to create the standalone executable:
+
+```bash
+pip install pyinstaller
+```
+
+**3. Generate the Executable**
+
+Navigate to the project directory and run the following command to generate the standalone executable:
+
+```bash
+pyinstaller --onefile main.py
+```
+
+After the process completes, you will find the standalone executable in the `dist` directory of your project.
+
+**4. Run the Standalone Application**
+
+Double-click the executable to run TriviaFrenzy as a standalone Windows application without the need for Python or any dependencies.
+
+## Documentation
+
+For more information on the libraries and tools used in this application, refer to the following documentation:
+
+- [PyQt5 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html): Learn more about PyQt5 for creating GUI applications.
+
+- [PyInstaller Documentation](https://pyinstaller.readthedocs.io/en/stable/): For details on converting Python scripts into executables.
+
+## Customization
+
+You can customize various aspects of the application by modifying the code, including:
+
+- **Questions:** Add or modify trivia questions by updating the `questions` list in the code.
+
+- **Styles:** Adjust colors, fonts, and button styles in the code to match your preferred theme.
+
+- **Icons:** Replace the default application icon with your own by providing the path to your icon file.
+
+## Conclusion
+
+TriviaFrenzy is a simple and fun way to engage users with trivia questions. Whether you want to challenge your friends or create your own trivia game, this application provides a solid foundation for building interactive PyQt5 applications.
+
